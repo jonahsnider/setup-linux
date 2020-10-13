@@ -6,4 +6,4 @@ echo source $SETUP_LINUX_INSTALL_DIR/config/fish/config.fish > ~/.config/fish/co
 # Link functions directory
 ln -s $SETUP_LINUX_INSTALL_DIR/config/fish/functions ~/.config/fish/functions
 
-sudo chsh -s (which fish)
+chsh -s (which fish)
