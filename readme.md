@@ -5,7 +5,8 @@ Sets up my Linux.
 Should be run on a recent version of Ubuntu.
 
 ```sh
-sudo bash init.bash
+# You must be in the setup-linux directory for things to work
+sudo bash ./init.bash
 ```
 
 ## What it does

@@ -1,7 +1,7 @@
 #!/usr/bin/env fish
 # The entrypoint that calls all the other install scripts
 
-set -Ugx SETUP_LINUX_INSTALL_DIR (pwd)/..
+set -Ugx SETUP_LINUX_INSTALL_DIR (pwd)
 
 fish $SETUP_LINUX_INSTALL_DIR/install/fish-config.fish
 echo "fish configured"
