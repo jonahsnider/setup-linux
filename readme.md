@@ -9,6 +9,10 @@ Should be run on a recent version of Ubuntu.
 ./init.bash
 ```
 
+You will need to enter the root password and your user password.
+You will probably get prompted with y/n input from SDKMAN! and choosenim.
+The entire process should only take a few minutes.
+
 ## What it does
 
 Installs a bunch of tools and programming languages.
