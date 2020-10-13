@@ -3,11 +3,6 @@
 
 set -gx SETUP_LINUX_INSTALL_DIR (pwd)
 
-fish $SETUP_LINUX_INSTALL_DIR/install/sdkman.fish
-echo "sdkman & fish integration configured"
-echo "java installed"
-echo "gradle installed"
-
 fish $SETUP_LINUX_INSTALL_DIR/install/rust.fish
 echo "rust installed"
 echo "starship configured"
@@ -24,3 +19,8 @@ echo "nim installed"
 
 fish $SETUP_LINUX_INSTALL_DIR/install/fish-config.fish
 echo "fish configured"
+
+fish $SETUP_LINUX_INSTALL_DIR/install/sdkman.fish
+echo "sdkman & fish integration configured"
+echo "java installed"
+echo "gradle installed"
