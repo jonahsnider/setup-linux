@@ -1,10 +1,7 @@
 #!/usr/bin/env fish
 # The entrypoint that calls all the other install scripts
 
-set -Ugx SETUP_LINUX_INSTALL_DIR (pwd)
-
-fish $SETUP_LINUX_INSTALL_DIR/install/fish-config.fish
-echo "fish configured"
+set -gx SETUP_LINUX_INSTALL_DIR (pwd)
 
 fish $SETUP_LINUX_INSTALL_DIR/install/sdkman.fish
 echo "sdkman & fish integration configured"
@@ -24,3 +21,6 @@ echo "git configured"
 
 fish $SETUP_LINUX_INSTALL_DIR/install/nim.fish
 echo "nim installed"
+
+fish $SETUP_LINUX_INSTALL_DIR/install/fish-config.fish
+echo "fish configured"
