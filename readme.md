@@ -6,7 +6,7 @@ Should be run on a recent version of Ubuntu.
 
 ```sh
 # You must be in the setup-linux directory for things to work
-sudo bash ./init.bash
+./init.bash
 ```
 
 ## What it does
