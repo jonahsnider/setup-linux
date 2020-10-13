@@ -3,6 +3,13 @@
 
 set -gx SETUP_LINUX_INSTALL_DIR (pwd)
 
+echo "installing prerequisite packages"
+sudo apt install -yqq build-essential libssl-dev pkg-config zip unzip
+#                     gcc for cargo   rust needs these for  used by
+#                     and nim         linux compilation     sdkman
+#                                                           and deno
+echo "prerequisite packages installed"
+
 fish $SETUP_LINUX_INSTALL_DIR/install/rust.fish
 echo "rust installed"
 echo "starship configured"
