@@ -6,6 +6,8 @@ Should be run on a recent version of Ubuntu.
 
 ```sh
 # You must be in the setup-linux directory for things to work
+git clone https://github.com/pizzafox/setup-linux.git
+cd setup-linux
 ./init.bash
 ```
 
