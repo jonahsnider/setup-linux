@@ -4,6 +4,18 @@ set fish_greeting
 ## Custom env
 set -gx NODE_ENV development
 
+### Deno
+set -gx DENO_INSTALL ~/.deno
+
+### Python
+# Use Python 3.8 by default
+alias python=(which python3.8)
+# Poetry
+set -gx PATH ~/.poetry/bin $PATH
+
+### npm
+npm config set prefix '~/.npm-global'
+
 ### PATH
 ## Local binaries
 set -gx fish_user_paths ~/.local/bin $fish_user_paths
@@ -36,17 +48,5 @@ set -gx fish_user_paths ~/.npm-global/bin $fish_user_paths
 # Fix the "gpg: error building skey array: Inappropriate ioctl for device" error
 # Solution from https://github.com/keybase/keybase-issues/issues/1712#issuecomment-141226705
 export GPG_TTY=(tty)
-
-### Python
-# Use Python 3.8 by default
-alias python=(which python3.8)
-# Poetry
-set -gx PATH ~/.poetry/bin $PATH
-
-### Deno
-set -gx DENO_INSTALL ~/.deno
-
-### npm
-npm config set prefix '~/.npm-global'
 
 starship init fish | source
