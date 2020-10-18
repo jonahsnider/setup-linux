@@ -1,10 +1,6 @@
 # Remove the Fish greeting
 set fish_greeting
 
-## Fish
-# Set fish function path to the local directory
-set -gx fish_function_path $SETUP_LINUX_INSTALL_DIR/config/fish/functions
-
 ## GPG
 # Fix the "gpg: error building skey array: Inappropriate ioctl for device" error
 # Solution from https://github.com/keybase/keybase-issues/issues/1712#issuecomment-141226705
