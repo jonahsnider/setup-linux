@@ -30,4 +30,5 @@ Configures other things too.
   - Gradle
 - Fish
   - Fisher
+- Keybase
 - .gitconfig

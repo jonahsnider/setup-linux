@@ -28,7 +28,10 @@ fish $SETUP_LINUX_INSTALL_DIR/install/nim.fish
 echo "nim installed"
 
 fish $SETUP_LINUX_INSTALL_DIR/install/fish-config.fish
-echo "fish configured"
+
+fish $SETUP_LINUX_INSTALL_DIR/install/keybase.fish
+echo "keybase configured"
+echo "GPG keys configured"
 
 fish $SETUP_LINUX_INSTALL_DIR/install/sdkman.fish
 echo "sdkman & fish integration configured"
