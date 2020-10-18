@@ -3,9 +3,15 @@
 
 set -gx SETUP_LINUX_INSTALL_DIR (pwd)
 
+# GitHub CLI
+# https://github.com/cli/cli/blob/trunk/docs/install_linux.md#debian-ubuntu-linux-apt
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
+sudo apt-add-repository https://cli.github.com/packages
+
 echo "installing prerequisite packages"
-sudo apt install -yqq build-essential libssl-dev pkg-config zip unzip
-#                     gcc for cargo   rust needs these for  used by
+sudo apt update -qq
+sudo apt install -yqq build-essential libssl-dev pkg-config zip unzip gh
+#                     gcc for cargo   rust needs these for  used by   GH
 #                     and nim         linux compilation     sdkman
 #                                                           and deno
 echo "prerequisite packages installed"

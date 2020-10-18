@@ -31,4 +31,5 @@ Configures other things too.
 - Fish
   - Fisher
 - Keybase
+- GitHub CLI
 - .gitconfig
