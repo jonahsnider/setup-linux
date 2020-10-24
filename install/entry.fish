@@ -10,10 +10,19 @@ sudo apt-add-repository https://cli.github.com/packages
 
 echo "installing prerequisite packages"
 sudo apt update -qq
-sudo apt install -yqq build-essential libssl-dev pkg-config zip unzip gh
-#                     gcc for cargo   rust needs these for  used by   GH
-#                     and nim         linux compilation     sdkman
-#                                                           and deno
+sudo apt install -yqq \
+  # GCC for Cargo and Nim
+  build-essential \
+  # Rust needs these for Linux compilation
+  libssl-dev \
+  pkg-config \
+  # Used by SDKMAN! and Deno
+  zip \
+  unzip \
+  # GitHub CLI
+  gh \
+  # Used by Git Credential Manager Core
+  pass
 echo "prerequisite packages installed"
 
 fish $SETUP_LINUX_INSTALL_DIR/install/rust.fish
@@ -27,9 +36,6 @@ fish $SETUP_LINUX_INSTALL_DIR/install/node.fish
 echo "node installed"
 echo "yarn installed"
 
-fish $SETUP_LINUX_INSTALL_DIR/install/git.fish
-echo "git configured"
-
 fish $SETUP_LINUX_INSTALL_DIR/install/nim.fish
 echo "nim installed"
 
@@ -38,6 +44,9 @@ fish $SETUP_LINUX_INSTALL_DIR/install/fish-config.fish
 fish $SETUP_LINUX_INSTALL_DIR/install/keybase.fish
 echo "keybase configured"
 echo "GPG keys configured"
+
+fish $SETUP_LINUX_INSTALL_DIR/install/git.fish
+echo "git configured"
 
 fish $SETUP_LINUX_INSTALL_DIR/install/sdkman.fish
 echo "sdkman & fish integration configured"
