@@ -1,7 +1,7 @@
 #!/usr/bin/env fish
 # Install Node.js
 
-set node_version 14
+set node_version 15
 
 # Install Node.js
 curl -sL "https://deb.nodesource.com/setup_"$node_version".x" | sudo -E bash -
