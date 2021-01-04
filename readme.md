@@ -25,6 +25,7 @@ Configures other things too.
   - Yarn
 - Rust
   - Starship via cargo
+- Go
 - SDKMAN!
   - Java
   - Gradle

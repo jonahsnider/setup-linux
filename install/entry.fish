@@ -39,6 +39,9 @@ echo "yarn installed"
 fish $SETUP_LINUX_INSTALL_DIR/install/nim.fish
 echo "nim installed"
 
+fish $SETUP_LINUX_INSTALL_DIR/install/go.fish
+echo "go installed"
+
 fish $SETUP_LINUX_INSTALL_DIR/install/fish-config.fish
 
 fish $SETUP_LINUX_INSTALL_DIR/install/keybase.fish
