@@ -36,6 +36,9 @@ fish $SETUP_LINUX_INSTALL_DIR/install/node.fish
 echo "node installed"
 echo "yarn installed"
 
+fish $SETUP_LINUX_INSTALL_DIR/install/pip.fish
+echo "pip installed"
+
 fish $SETUP_LINUX_INSTALL_DIR/install/nim.fish
 echo "nim installed"
 
