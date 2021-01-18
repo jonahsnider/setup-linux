@@ -21,6 +21,10 @@ alias python=(which python3.8)
 # Poetry
 set -gx PATH ~/.poetry/bin $PATH
 
+## Yarn
+# Alias Squoosh CLI
+alias squoosh=squoosh-cli
+
 ## npm
 npm config set prefix '~/.npm-global'
 
