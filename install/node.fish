@@ -13,3 +13,15 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/source
 
 sudo apt update -qq
 sudo apt install -yqq yarn
+
+# Install global packages
+yarn global add \
+  nodejs/repl \
+  @openapitools/openapi-generator-cli \
+  @pizzafox/how \
+  @squoosh/cli \
+  live-server \
+  micro \
+  tldr \
+  vdx \
+  yo
