@@ -1,11 +1,11 @@
 #!/usr/bin/env fish
-# Install Node.js
+# Install Node.js with Fast Node Manager
 
 set node_version 15
 
 # Install Node.js
-curl -sL "https://deb.nodesource.com/setup_"$node_version".x" | sudo -E bash -
-sudo apt-get install -yqq nodejs
+fnm install $node_version
+fnm use $node_version
 
 # Install Yarn package manager
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -

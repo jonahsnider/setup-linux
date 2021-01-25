@@ -25,9 +25,6 @@ set -gx PATH ~/.poetry/bin $PATH
 # Alias Squoosh CLI
 alias squoosh=squoosh-cli
 
-## npm
-npm config set prefix '~/.npm-global'
-
 ### PATH
 ## Local binaries
 set -gx fish_user_paths ~/.local/bin $fish_user_paths
@@ -43,6 +40,11 @@ set -gx fish_user_paths $GOPATH/bin $GOROOT/bin $fish_user_paths
 ## Rust
 # Cargo binaries
 set -gx fish_user_paths ~/.cargo/bin $fish_user_paths
+# Fast Node Manager
+fnm env | source
+
+## npm
+npm config set prefix '~/.npm-global'
 
 ## .NET
 set -gx DOTNET_CLI_TELEMETRY_OPTOUT true
