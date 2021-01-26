@@ -29,6 +29,9 @@ alias squoosh=squoosh-cli
 ## Local binaries
 set -gx fish_user_paths ~/.local/bin $fish_user_paths
 
+## Nix
+fenv source ~/.nix-profile/etc/profile.d/nix.sh
+
 ## Go
 # Go installation root directory
 set -gx GOROOT /usr/local/go

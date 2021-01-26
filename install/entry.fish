@@ -58,3 +58,6 @@ fish $SETUP_LINUX_INSTALL_DIR/install/sdkman.fish
 echo "sdkman & fish integration configured"
 echo "java installed"
 echo "gradle installed"
+
+fish $SETUP_LINUX_INSTALL_DIR/install/nix.fish
+echo "nix installed"
