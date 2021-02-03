@@ -44,7 +44,7 @@ set -gx fish_user_paths $GOPATH/bin $GOROOT/bin $fish_user_paths
 # Cargo binaries
 set -gx fish_user_paths ~/.cargo/bin $fish_user_paths
 # Fast Node Manager
-fnm env | source
+fnm env --use-on-cd | source
 
 ## npm
 npm config set prefix '~/.npm-global'
