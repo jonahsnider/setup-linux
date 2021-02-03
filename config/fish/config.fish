@@ -43,8 +43,10 @@ set -gx fish_user_paths $GOPATH/bin $GOROOT/bin $fish_user_paths
 ## Rust
 # Cargo binaries
 set -gx fish_user_paths ~/.cargo/bin $fish_user_paths
-# Fast Node Manager
+# Change Node.js version with Fast Node Manager when directories changed and once on boot
 fnm env --use-on-cd | source
+# Silently fail
+fnm use > /dev/null 2>&- || :
 
 ## npm
 npm config set prefix '~/.npm-global'
@@ -61,4 +63,5 @@ set -gx fish_user_paths $DENO_INSTALL/bin $fish_user_paths
 ## npm
 set -gx fish_user_paths ~/.npm-global/bin $fish_user_paths
 
+# Starship shell prompt
 starship init fish | source
