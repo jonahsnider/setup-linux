@@ -16,6 +16,7 @@ yarn global add \
   @openapitools/openapi-generator-cli \
   @pizzafox/how \
   @squoosh/cli \
+  heroku \
   live-server \
   micro \
   tldr \
