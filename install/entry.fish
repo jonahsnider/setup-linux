@@ -5,8 +5,10 @@ set -gx SETUP_LINUX_INSTALL_DIR (pwd)
 
 # GitHub CLI
 # https://github.com/cli/cli/blob/trunk/docs/install_linux.md#debian-ubuntu-linux-apt
+sudo apt install software-properties-common -yqq
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
-sudo apt-add-repository https://cli.github.com/packages
+sudo apt-add-repository -y -n https://cli.github.com/packages
+sudo add-apt-repository -y -n ppa:cncf-buildpacks/pack-cli
 
 echo "installing prerequisite packages"
 sudo apt update -qq
@@ -23,6 +25,8 @@ sudo apt install -yqq \
   gh \
   # Used by Git Credential Manager Core
   pass
+  # Pack (https://buildpacks.io/docs/tools/pack/#install)
+  pack-cli
 echo "prerequisite packages installed"
 
 fish $SETUP_LINUX_INSTALL_DIR/install/rust.fish
