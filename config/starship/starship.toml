@@ -42,7 +42,6 @@ $nix_shell\
 $conda\
 $memory_usage\
 $aws\
-$gcloud\
 $env_var\
 $crystal\
 $cmd_duration\
