@@ -7,7 +7,7 @@ function update_lazygit -d "Update lazygit to the specified version"
   # Download
   tar xf $filename.tar.gz -C $installDir
   # Replace version
-  mv $installDir/lazygit (which lazygit)
+  sudo mv $installDir/lazygit (which lazygit)
 
   echo lazygit $argv installed
 end
