@@ -112,3 +112,6 @@ style = "green"
 
 [java]
 style = "red"
+
+[nodejs]
+symbol = "⬢ "
