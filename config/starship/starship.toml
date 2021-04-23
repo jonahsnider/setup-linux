@@ -65,35 +65,35 @@ $character"""
 
 # Time module
 [time]
-use_12hr = true
 disabled = false
 time_format = "%I:%M %p"
+use_12hr = true
 utc_time_offset = -7
 
 # Directory listing
 [directory]
+fish_style_pwd_dir_length = 1
 truncation_length = 2
-fish_style_pwd_dir_length	= 1
 
 # Character before prompt
 [character]
-success_symbol = "[∴](bold green)"
 error_symbol = "[∴](bold red)"
+success_symbol = "[∴](bold green)"
 vicmd_symbol = "[❮](bold green)"
 
 # Battery monitor
 [[battery.display]]
-threshold = 15
 style = "bold #ff5555"
+threshold = 15
 [[battery.display]]
-threshold = 33
 style = "bold #ffb86c"
+threshold = 33
 [[battery.display]]
-threshold = 66
 style = "bold #f1fa8c"
+threshold = 66
 [[battery.display]]
-threshold = 100
 style = "bold #50fa7b"
+threshold = 100
 
 # Make git commit joined with the branch
 [git_branch]
@@ -112,12 +112,12 @@ format = "[@$hash]($style) "
 deleted = "🗙"
 
 [username]
-show_always = true
 format = "[$user]($style)@"
+show_always = true
 
 [hostname]
-ssh_only = false
 format = "[$hostname]($style) "
+ssh_only = false
 style = "green"
 
 [java]
