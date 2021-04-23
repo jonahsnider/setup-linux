@@ -9,6 +9,7 @@ $hostname\
 $shlvl\
 $kubernetes\
 $time\
+$vcsh\
 $git_branch\
 $git_commit\
 $git_state\
@@ -18,6 +19,7 @@ $docker_context\
 $package\
 $cmake\
 $dart\
+$deno\
 $dotnet\
 $elixir\
 $elm\
@@ -26,6 +28,7 @@ $golang\
 $helm\
 $java\
 $julia\
+$kotlin\
 $nim\
 $nodejs\
 $ocaml\
@@ -33,24 +36,31 @@ $perl\
 $php\
 $purescript\
 $python\
+$red\
 $ruby\
 $rust\
+$scala\
 $swift\
 $terraform\
+$vagrant\
 $zig\
 $nix_shell\
 $conda\
 $memory_usage\
 $aws\
+$gcloud\
+$openstack\
 $env_var\
 $crystal\
-$cmd_duration\
 $custom\
+$cmd_duration\
 $line_break\
+$lua\
 $jobs\
 $battery\
-$status\
 $directory\
+$status\
+$shell\
 $character"""
 
 # Time module
