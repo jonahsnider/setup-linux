@@ -19,7 +19,7 @@ set -gx DENO_INSTALL ~/.deno
 # Use Python 3.8 by default
 alias python=(which python3.8)
 # Poetry
-set -gx PATH ~/.poetry/bin $PATH
+fish_add_path -g ~/.poetry/bin
 
 ## Yarn
 # Alias Squoosh CLI
@@ -27,7 +27,7 @@ alias squoosh=squoosh-cli
 
 ### PATH
 ## Local binaries
-set -gx fish_user_paths ~/.local/bin $fish_user_paths
+fish_add_path -g ~/.local/bin
 
 ## Nix
 fenv source ~/.nix-profile/etc/profile.d/nix.sh
@@ -37,12 +37,12 @@ fenv source ~/.nix-profile/etc/profile.d/nix.sh
 set -gx GOROOT /usr/local/go
 # Work directory
 set -gx GOPATH $HOME/programming/go
-# Add Go to fish_user_paths
-set -gx fish_user_paths $GOPATH/bin $GOROOT/bin $fish_user_paths
+# Add Go binaries to PATH
+fish_add_path -g $GOPATH/bin $GOROOT/bin
 
 ## Rust
 # Cargo binaries
-set -gx fish_user_paths ~/.cargo/bin $fish_user_paths
+fish_add_path -g ~/.cargo/bin
 # Change Node.js version with Fast Node Manager when directories changed and once on boot
 fnm env --use-on-cd | source
 # Silently fail
@@ -55,13 +55,13 @@ npm config set prefix '~/.npm-global'
 set -gx DOTNET_CLI_TELEMETRY_OPTOUT true
 
 ## Nim
-set -gx fish_user_paths ~/.nimble/bin $fish_user_paths
+fish_add_path -g ~/.nimble/bin
 
 ## Deno
-set -gx fish_user_paths $DENO_INSTALL/bin $fish_user_paths
+fish_add_path -g $DENO_INSTALL/bin
 
 ## npm
-set -gx fish_user_paths ~/.npm-global/bin $fish_user_paths
+fish_add_path -g ~/.npm-global/bin
 
 # Starship shell prompt
 starship init fish | source
