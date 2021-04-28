@@ -13,8 +13,8 @@ set -gx NODE_ENV development
 set -gx DENO_INSTALL ~/.deno
 
 ## Python
-# Use Python 3.8 by default
-alias python=(which python3.8)
+# Use Python 3 by default
+alias python=(which python3)
 # Poetry
 fish_add_path -g ~/.poetry/bin
 
