@@ -81,6 +81,9 @@ error_symbol = "[∴](bold red)"
 success_symbol = "[∴](bold green)"
 
 # Battery monitor
+[battery]
+format = "at [$percentage]($style) battery "
+
 [[battery.display]]
 style = "bold #ff5555"
 threshold = 15
