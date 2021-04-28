@@ -54,10 +54,10 @@ $env_var\
 $crystal\
 $custom\
 $cmd_duration\
+$battery\
 $line_break\
 $lua\
 $jobs\
-$battery\
 $directory\
 $status\
 $shell\
