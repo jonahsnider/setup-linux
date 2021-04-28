@@ -14,7 +14,7 @@ npm install -g yarn
 yarn global add \
   nodejs/repl \
   @openapitools/openapi-generator-cli \
-  @pizzafox/how \
+  @jonahsnider/how \
   @squoosh/cli \
   heroku \
   live-server \
