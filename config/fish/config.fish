@@ -30,7 +30,9 @@ alias squoosh=squoosh-cli
 fish_add_path -g ~/.local/bin
 
 ## Nix
-fenv source ~/.nix-profile/etc/profile.d/nix.sh
+if test -d ~/.nix-profile/
+  fenv source ~/.nix-profile/etc/profile.d/nix.sh
+end
 
 ## Go
 # Go installation root directory
