@@ -6,9 +6,6 @@ set fish_greeting
 # Solution from https://github.com/keybase/keybase-issues/issues/1712#issuecomment-141226705
 export GPG_TTY=(tty)
 
-## X display
-set -gx DISPLAY (cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
-
 ## Custom env
 set -gx NODE_ENV development
 
