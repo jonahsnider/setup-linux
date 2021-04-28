@@ -9,7 +9,6 @@
 [commit]
 	gpgsign = true
 [credential]
-	helper = 
 	helper = manager-core
 	credentialStore = gpg
 [credential "https://dev.azure.com"]
