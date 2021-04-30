@@ -22,6 +22,11 @@ fish_add_path -g ~/.poetry/bin
 # Alias Squoosh CLI
 alias squoosh=squoosh-cli
 
+if test -f ~/.gh_token
+  set -gx GITHUB_TOKEN (cat ~/.gh_token)
+  set -gx HOMEBREW_GITHUB_API_TOKEN $GITHUB_TOKEN
+end
+
 ### PATH
 ## Local binaries
 fish_add_path -g ~/.local/bin
