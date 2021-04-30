@@ -26,6 +26,11 @@ alias squoosh=squoosh-cli
 ## Local binaries
 fish_add_path -g ~/.local/bin
 
+# macOS
+if test -d /Applications
+  fish_add_path -g /Applications
+end
+
 ## Nix
 if test -d ~/.nix-profile/
   fenv source ~/.nix-profile/etc/profile.d/nix.sh
