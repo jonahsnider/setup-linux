@@ -9,11 +9,15 @@
 [commit]
 	gpgsign = true
 [credential]
-	helper = manager-core
 	credentialStore = gpg
+	helper =
+  helper = manager-core
 [credential "https://dev.azure.com"]
 	useHttpPath = true
 [pull]
 	rebase = true
 [init]
 	defaultBranch = main
+[credential "https://github.com"]
+	helper =
+	helper = !/usr/bin/gh auth git-credential
