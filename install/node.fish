@@ -7,6 +7,8 @@ set node_version 15
 fnm install $node_version
 fnm use $node_version
 
+npm config set prefix '~/.npm-global'
+
 # Install Yarn package manager
 npm install -g yarn
 

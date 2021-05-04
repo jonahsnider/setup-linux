@@ -57,9 +57,6 @@ fnm env --use-on-cd | source
 # Silently fail
 fnm use > /dev/null 2>&- || :
 
-## npm
-npm config set prefix '~/.npm-global'
-
 ## .NET
 set -gx DOTNET_CLI_TELEMETRY_OPTOUT true
 
