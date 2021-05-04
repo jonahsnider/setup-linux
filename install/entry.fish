@@ -24,7 +24,7 @@ sudo apt install -yqq \
   # GitHub CLI
   gh \
   # Used by Git Credential Manager Core
-  pass
+  pass \
   # Pack (https://buildpacks.io/docs/tools/pack/#install)
   pack-cli
 echo "prerequisite packages installed"
