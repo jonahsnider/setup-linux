@@ -4,6 +4,8 @@ alias ga "git add"
 alias gA "git add -A"
 alias gc "git commit"
 alias gs "git status"
+alias gp "git pull"
+alias gP "git push"
 
 # Watson
 alias w watson
