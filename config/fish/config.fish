@@ -52,10 +52,13 @@ fish_add_path -g $GOPATH/bin $GOROOT/bin
 ## Rust
 # Cargo binaries
 fish_add_path -g ~/.cargo/bin
-# Change Node.js version with Fast Node Manager when directories changed and once on boot
-fnm env --use-on-cd | source
-# Silently fail
-fnm use > /dev/null 2>&- || :
+if set -q SETUP_LINUX_INSTALL
+else
+  # Change Node.js version with Fast Node Manager when directories changed and once on boot
+  fnm env --use-on-cd | source
+  # Silently fail
+  fnm use > /dev/null 2>&- || :
+end
 
 ## .NET
 set -gx DOTNET_CLI_TELEMETRY_OPTOUT true

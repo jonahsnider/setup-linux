@@ -1,6 +1,7 @@
 #!/usr/bin/env fish
 # The entrypoint that calls all the other install scripts
 
+set -gx SETUP_LINUX_INSTALL 1
 set -gx SETUP_LINUX_INSTALL_DIR (pwd)
 
 # GitHub CLI
@@ -33,23 +34,37 @@ fish $SETUP_LINUX_INSTALL_DIR/install/rust.fish
 echo "rust installed"
 echo "starship configured"
 
+source ~/.config/fish/config.fish
+
 fish $SETUP_LINUX_INSTALL_DIR/install/deno.fish
 echo "deno installed"
+
+source ~/.config/fish/config.fish
 
 fish $SETUP_LINUX_INSTALL_DIR/install/node.fish
 echo "node installed"
 echo "yarn installed"
 
+source ~/.config/fish/config.fish
+
 fish $SETUP_LINUX_INSTALL_DIR/install/pip.fish
 echo "pip installed"
+
+source ~/.config/fish/config.fish
 
 fish $SETUP_LINUX_INSTALL_DIR/install/nim.fish
 echo "nim installed"
 
+source ~/.config/fish/config.fish
+
 fish $SETUP_LINUX_INSTALL_DIR/install/go.fish
 echo "go installed"
 
+source ~/.config/fish/config.fish
+
 fish $SETUP_LINUX_INSTALL_DIR/install/fish-config.fish
+
+source ~/.config/fish/config.fish
 
 fish $SETUP_LINUX_INSTALL_DIR/install/keybase.fish
 echo "keybase configured"
@@ -65,3 +80,6 @@ echo "gradle installed"
 
 fish $SETUP_LINUX_INSTALL_DIR/install/nix.fish
 echo "nix installed"
+
+set -e SETUP_LINUX_INSTALL
+source ~/.config/fish/config.fish

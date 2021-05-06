@@ -7,4 +7,4 @@ wget -q -O $filename https://bootstrap.pypa.io/get-pip.py
 # Python is already installed from Node.js or base Ubuntu image
 python3 $filename
 
-/home/jonah/.local/bin/pip install -qqq ciphey
+pip install -qqq ciphey
