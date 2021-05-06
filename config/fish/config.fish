@@ -1,6 +1,8 @@
 # Remove the Fish greeting
 set fish_greeting
 
+set -gx EDITOR nano
+
 ## GPG
 # Fix the "gpg: error building skey array: Inappropriate ioctl for device" error
 # Solution from https://github.com/keybase/keybase-issues/issues/1712#issuecomment-141226705
