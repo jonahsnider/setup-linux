@@ -72,5 +72,8 @@ fish_add_path -g $DENO_INSTALL/bin
 ## npm
 fish_add_path -g ~/.npm-global/bin
 
+# Register aliases
+source (dirname (status --current-filename))/mnemonics.fish
+
 # Starship shell prompt
 starship init fish | source
