@@ -71,7 +71,10 @@ alias sq squoosh
 alias N nano
 
 # cURL
-alias c curl
+alias cu curl
 
 # Wget
 alias w wget
+
+# clear
+alias c clear
