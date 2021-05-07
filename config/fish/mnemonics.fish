@@ -14,6 +14,7 @@ alias wS "watson stop"
 alias wC "watson cancel"
 alias wr "watson report"
 alias wl "watson log"
+alias we "watson edit"
 
 # Node.js
 alias n node
