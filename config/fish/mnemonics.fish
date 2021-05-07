@@ -20,6 +20,10 @@ alias n node
 
 # Yarn
 alias y yarn
+alias ya "yarn add"
+alias yr "yarn remove"
+alias ys "yarn start"
+alias yt "yarn test"
 
 # Docker
 alias d docker
