@@ -68,7 +68,7 @@ alias ff fmpeg
 alias sq squoosh
 
 # nano
-alias n nano
+alias N nano
 
 # cURL
 alias c curl
