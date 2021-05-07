@@ -11,7 +11,7 @@ alias gP "git push"
 alias w watson
 alias ws "watson start"
 alias wS "watson stop"
-alias wc "watson cancel"
+alias wC "watson cancel"
 alias wr "watson report"
 alias wl "watson log"
 
@@ -21,10 +21,47 @@ alias n node
 # Yarn
 alias y yarn
 alias ya "yarn add"
-alias yr "yarn remove"
+alias yR "yarn remove"
 alias ys "yarn start"
 alias yt "yarn test"
 
 # Docker
 alias d docker
 alias dc "docker compose"
+
+# cd
+alias cdp "cd ~/programming"
+alias cdpv "cd ~/programming/voiceflow"
+
+# Brew
+alias b brew
+alias bu "brew update"
+alias bU "brew upgrade"
+
+# apt
+alias a apt
+alias ai "apt install"
+alias aR "apt remove"
+alias au "apt update"
+alias aU "apt upgrade"
+
+# sudo
+alias s sudo
+
+# open
+alias o open
+
+# FFMPEG
+alias ff fmpeg
+
+# squoosh
+alias sq squoosh
+
+# nano
+alias n nano
+
+# cURL
+alias c curl
+
+# Wget
+alias w wget
