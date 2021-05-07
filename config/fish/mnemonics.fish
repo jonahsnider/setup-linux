@@ -8,14 +8,16 @@ alias gp "git pull"
 alias gP "git push"
 
 # Watson
-alias w watson
-alias ws "watson start"
-alias wS "watson stop"
-alias wC "watson cancel"
-alias wr "watson report"
-alias wl "watson log"
-alias we "watson edit"
-alias wst "watson status"
+if type -q watson
+  alias w watson
+  alias ws "watson start"
+  alias wS "watson stop"
+  alias wC "watson cancel"
+  alias wr "watson report"
+  alias wl "watson log"
+  alias we "watson edit"
+  alias wst "watson status"
+end
 
 # Node.js
 alias n node
@@ -33,19 +35,25 @@ alias dc "docker compose"
 
 # cd
 alias cdp "cd ~/programming"
-alias cdpv "cd ~/programming/voiceflow"
+if test -d ~/programming/voiceflow
+  alias cdpv "cd ~/programming/voiceflow"
+end
 
 # Brew
-alias b brew
-alias bu "brew update"
-alias bU "brew upgrade"
+if type -q brew
+  alias b brew
+  alias bu "brew update"
+  alias bU "brew upgrade"
+end
 
 # apt
-alias a apt
-alias ai "apt install"
-alias aR "apt remove"
-alias au "apt update"
+if type -q apt; and test (uname) != "Darwin"
+  alias a apt
+  alias ai "apt install"
+  alias aR "apt remove"
+  alias au "apt update"
 alias aU "apt upgrade"
+end
 
 # sudo
 alias s sudo
