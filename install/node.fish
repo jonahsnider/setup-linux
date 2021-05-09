@@ -21,6 +21,5 @@ yarn global add \
   heroku \
   live-server \
   micro \
-  tldr \
   vdx \
   yo
