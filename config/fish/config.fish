@@ -13,6 +13,7 @@ set -gx NODE_ENV development
 
 ## Deno
 set -gx DENO_INSTALL ~/.deno
+fish_add_path -g $DENO_INSTALL/bin
 
 ## Python
 # Use Python 3 by default
