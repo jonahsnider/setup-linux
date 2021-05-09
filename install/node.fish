@@ -1,7 +1,7 @@
 #!/usr/bin/env fish
 # Install Node.js with Fast Node Manager
 
-set node_version 15
+set node_version 16
 
 # Install Node.js
 fnm install $node_version
