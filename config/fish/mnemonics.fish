@@ -80,4 +80,4 @@ alias cu curl
 alias w wget
 
 # clear
-alias c clear
+alias c "clear -x"
