@@ -28,6 +28,9 @@ alias ya "yarn add"
 alias yR "yarn remove"
 alias ys "yarn start"
 alias yt "yarn test"
+alias yl "yarn lint"
+alias yL "yarn lint --fix"
+alias yS "yarn style --write"
 
 # Docker
 alias d docker
