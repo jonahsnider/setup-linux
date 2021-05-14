@@ -31,6 +31,7 @@ alias yt "yarn test"
 alias yl "yarn lint"
 alias yL "yarn lint --fix"
 alias yS "yarn style --write"
+alias yb "yarn build"
 alias yd "yarn dev"
 
 # Docker
