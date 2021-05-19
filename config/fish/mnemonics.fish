@@ -86,3 +86,6 @@ alias w wget
 
 # clear
 alias c "clear -x"
+
+# vfcli
+alias vf vfcli
