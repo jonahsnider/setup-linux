@@ -52,6 +52,7 @@ if type -q brew
   alias b brew
   alias bu "brew update"
   alias bU "brew upgrade"
+  alias bt "brew tap"
 end
 
 # apt
