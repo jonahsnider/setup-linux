@@ -42,6 +42,7 @@ alias dc "docker compose"
 alias cdp "cd ~/programming"
 if test -d ~/programming/voiceflow
   alias cdpv "cd ~/programming/voiceflow"
+
 end
 if test -d ~/programming/zws
   alias cdpz "cd ~/programming/zws"
@@ -91,3 +92,8 @@ alias c "clear -x"
 
 # vfcli
 alias vf vfcli
+
+if test -d ~/programming/voiceflow/database-cli
+  alias dbcli ~/programming/voiceflow/database-cli/bin/run
+  alias vfdb ~/programming/voiceflow/database-cli/bin/run
+end
