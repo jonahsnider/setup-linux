@@ -73,7 +73,7 @@ alias s sudo
 alias o open
 
 # FFMPEG
-alias ff fmpeg
+alias ff ffmpeg
 
 # squoosh
 alias sq squoosh
