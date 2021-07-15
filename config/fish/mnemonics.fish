@@ -90,6 +90,13 @@ alias w wget
 # clear
 alias c "clear -x"
 
+# Rome
+alias rome "yarn rome"
+alias r rome
+alias rc "rome check"
+alias rC "rome check --apply"
+alias rt "rome test"
+
 # vfcli
 alias vf vfcli
 
