@@ -1,3 +1,6 @@
+# lazygit
+alias lg lazygit
+
 # Git
 alias g git
 alias ga "git add"
