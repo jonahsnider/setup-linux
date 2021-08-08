@@ -25,6 +25,7 @@ Configures other things too.
   - Yarn
 - Rust
   - Starship via cargo
+  - Delta pager for Git
 - Go
 - SDKMAN!
   - Java
