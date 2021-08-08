@@ -1,7 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR DISPLAY:172\x2e26\x2e32\x2e1\x3a0
-SETUVAR SETUP_LINUX_INSTALL_DIR:/home/jonah/programming/setup\x2dlinux
 SETUVAR __fish_initialized:3100
 SETUVAR fish_color_autosuggestion:BD93F9
 SETUVAR fish_color_cancel:\x2dr
