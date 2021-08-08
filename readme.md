@@ -21,7 +21,7 @@ Installs a bunch of tools and programming languages.
 Configures other things too.
 
 - Nim (via choosenim)
-- Node.js
+- Node.js (via fnm)
   - Yarn
 - Rust
   - Starship via cargo
