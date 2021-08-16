@@ -22,9 +22,6 @@ if type -q watson
   alias wst "watson status"
 end
 
-# Node.js
-alias n node
-
 # Yarn
 alias y yarn
 alias ya "yarn add"
@@ -107,3 +104,12 @@ if test -d ~/programming/voiceflow/database-cli
   alias dbcli ~/programming/voiceflow/database-cli/bin/run
   alias vfdb ~/programming/voiceflow/database-cli/bin/run
 end
+
+# Python
+alias py python
+
+# Ruby
+alias rb ruby
+
+# Node.js
+alias n node
