@@ -1,0 +1,12 @@
+diff --git a/config/fish/functions/up-or-search.fish b/config/fish/functions/up-or-search.fish
+index 439831f..ab8afc4 100644
+--- a/config/fish/functions/up-or-search.fish
++++ b/config/fish/functions/up-or-search.fish
+@@ -20,6 +20,7 @@ function up-or-search --description 'Depending on cursor position and current mo
+     switch $lineno
+         case 1
+             commandline -f history-search-backward
++            history merge
+
+         case '*'
+             commandline -f up-line
