@@ -24,6 +24,7 @@ fish_add_path -g ~/.poetry/bin
 ## Yarn
 # Alias Squoosh CLI
 alias squoosh=squoosh-cli
+fish_add_path ~/.node/corepack/yarn/1.22.11/bin
 
 ## Secrets
 # GitHub token

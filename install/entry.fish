@@ -43,7 +43,6 @@ source ~/.config/fish/config.fish
 
 fish $SETUP_LINUX_INSTALL_DIR/install/node.fish
 echo "node installed"
-echo "yarn installed"
 
 source ~/.config/fish/config.fish
 

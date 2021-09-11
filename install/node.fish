@@ -7,10 +7,10 @@ set node_version 16
 fnm install $node_version
 fnm use $node_version
 
-npm config set prefix '~/.npm-global'
+# Install package managers
+corepack prepare --all
 
-# Install Yarn package manager
-npm install -g yarn
+npm config set prefix '~/.npm-global'
 
 # Install global packages
 yarn global add \
