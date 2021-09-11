@@ -92,10 +92,10 @@ alias c "clear -x"
 
 # Rome
 alias rome "yarn rome"
-alias r rome
-alias rc "rome check"
-alias rC "rome check --apply"
-alias rt "rome test"
+alias r "yarn rome"
+alias rc "yarn rome check"
+alias rC "yarn rome check --apply"
+alias rt "yarn rome test"
 
 # vfcli
 alias vf vfcli
