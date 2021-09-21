@@ -9,6 +9,10 @@ alias gc "git commit"
 alias gs "git status"
 alias gp "git pull"
 alias gP "git push"
+alias gr "git rebase"
+alias grc "git rebase --continue"
+alias grm "git rebase master"
+alias gR "git reset"
 
 # Watson
 if type -q watson
