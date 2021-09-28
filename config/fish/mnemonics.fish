@@ -5,11 +5,12 @@ alias lg lazygit
 alias g git
 alias ga "git add"
 alias gA "git add -A"
-alias gc "git commit"
+alias gcm "git commit -m"
 alias gs "git status"
 alias gp "git pull"
 alias gP "git push"
 alias gr "git rebase"
+alias gc "git checkout"
 alias grc "git rebase --continue"
 alias grm "git rebase master"
 alias gR "git reset"
