@@ -13,5 +13,11 @@ run_keybase
 
 keybase login
 
-keybase pgp export | gpg --import
-keybase pgp export -s | gpg --allow-secret-key-import --import
+# E85CE1D319132409 - Old RSA-4096 key
+# E85CE1D319132409 - New ED25519 key
+
+keybase pgp export --query E85CE1D319132409 | gpg --import
+keybase pgp export --query BCEA63377AC37FDE | gpg --import
+
+keybase pgp export --query E85CE1D319132409 --secret | gpg --allow-secret-key-import --import
+keybase pgp export --query BCEA63377AC37FDE --secret | gpg --allow-secret-key-import --import

@@ -1,7 +1,7 @@
 [user]
 	email = jonah@jonahsnider.com
 	name = Jonah Snider
-	signingkey = E3D78B8F4596CD635F304439E85CE1D319132409
+	signingkey = 339704D783EF368FDCDFA473BCEA63377AC37FDE
 [gpg]
 	program = gpg
 [core]

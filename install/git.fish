@@ -2,7 +2,7 @@
 # Set symlink for .gitconfig
 
 ln -s $SETUP_LINUX_INSTALL_DIR/config/git/.gitconfig ~/.gitconfig
-pass init E3D78B8F4596CD635F304439E85CE1D319132409
+pass init 339704D783EF368FDCDFA473BCEA63377AC37FDE
 
 set filename /tmp/gcmcore-linux_amd64.deb
 # Once GCM goes stable this should be removed
