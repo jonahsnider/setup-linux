@@ -26,13 +26,6 @@ fish_add_path -g $GOPATH/bin $GOROOT/bin
 #region Rust
 # Cargo binaries
 fish_add_path -g ~/.cargo/bin
-if set -q SETUP_LINUX_INSTALL
-else
-  # Change Node.js version with Fast Node Manager when directories changed and once on boot
-  fnm env --use-on-cd | source
-  # Silently fail
-  fnm use > /dev/null 2>&- || :
-end
 #endregion
 
 #region .NET
@@ -57,6 +50,14 @@ set -gx EDITOR nano
 
 # Register aliases
 source (dirname (status --current-filename))/mnemonics.fish
+
+if set -q SETUP_LINUX_INSTALL
+else
+  # Change Node.js version with Fast Node Manager when directories changed and once on boot
+  fnm env --use-on-cd | source
+  # Silently fail
+  fnm use > /dev/null 2>&- || :
+end
 
 #region GPG
 # Fix the "gpg: error building skey array: Inappropriate ioctl for device" error
