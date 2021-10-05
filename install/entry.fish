@@ -17,11 +17,9 @@ sudo apt install -yqq \
   # GCC for Cargo and Nim
   build-essential \
   # Rust needs these for Linux compilation
-  libssl-dev \
-  pkg-config \
+  libssl-dev pkg-config \
   # Used by SDKMAN! and Deno
-  zip \
-  unzip \
+  zip  unzip \
   # GitHub CLI
   gh \
   # Used by Git Credential Manager Core
