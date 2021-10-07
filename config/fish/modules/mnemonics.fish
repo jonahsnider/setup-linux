@@ -14,6 +14,7 @@ alias gc "git checkout"
 alias grc "git rebase --continue"
 alias grm "git rebase master"
 alias gR "git reset"
+alias gb "git branch"
 
 # Watson
 if type -q watson
