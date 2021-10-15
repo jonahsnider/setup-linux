@@ -43,6 +43,12 @@ alias yd "yarn dev"
 # Docker
 alias d docker
 alias dc "docker compose"
+alias dcp "docker compose pull"
+alias dcps "docker compose ps"
+alias dcl "docker compose logs"
+alias dcu "docker compose up"
+alias dcD "docker compose down"
+alias dcS "docker compose stop"
 
 # cd
 alias cdp "cd ~/programming"
