@@ -42,6 +42,7 @@ alias yd "yarn dev"
 
 # Docker
 alias d docker
+alias db "docker build"
 alias dc "docker compose"
 alias dcp "docker compose pull"
 alias dcps "docker compose ps"
