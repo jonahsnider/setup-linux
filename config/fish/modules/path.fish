@@ -38,7 +38,7 @@ fish_add_path -g ~/.npm-global/bin
 #region Yarn
 # I could run this but Corepack + Yarn is slow (200ms):
 # fish_add_path ~/.node/corepack/yarn/(corepack yarn --version)/bin
-fish_add_path ~/.node/corepack/yarn/1.22.15/bin
+fish_add_path ~/.node/corepack/yarn/1.22.17/bin
 #endregion
 
 #region Python
