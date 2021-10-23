@@ -15,7 +15,9 @@
 [credential "https://dev.azure.com"]
 	useHttpPath = true
 [pull]
-	rebase = true
+	rebase = interactive
+[rebase]
+  autoSquash = true
 [init]
 	defaultBranch = main
 [credential "https://github.com"]
