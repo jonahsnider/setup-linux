@@ -9,6 +9,7 @@ fnm use $node_version
 
 # Install package managers
 corepack prepare --all
+corepack enable
 
 npm config set prefix '~/.npm-global'
 
