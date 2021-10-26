@@ -15,7 +15,7 @@
 [credential "https://dev.azure.com"]
 	useHttpPath = true
 [pull]
-	rebase = interactive
+	rebase = true
 [rebase]
   autoSquash = true
 [init]
