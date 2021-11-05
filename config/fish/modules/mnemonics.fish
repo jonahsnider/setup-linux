@@ -26,6 +26,7 @@ if type -q watson
   alias wl "watson log"
   alias we "watson edit"
   alias wst "watson status"
+  alias wR "watson remove"
 end
 
 # Yarn
@@ -96,9 +97,6 @@ alias N nano
 
 # cURL
 alias cu curl
-
-# Wget
-alias w wget
 
 # clear
 alias c "clear -x"
