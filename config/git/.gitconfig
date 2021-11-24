@@ -40,3 +40,5 @@
 
 [interactive]
     diffFilter = delta --color-only
+[help]
+	autoCorrect = prompt
