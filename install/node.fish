@@ -17,7 +17,7 @@ npm config set prefix '~/.npm-global'
 yarn global add \
   nodejs/repl \
   @openapitools/openapi-generator-cli \
-  @jonahsnider/how \
+  how-cli \
   @squoosh/cli \
   heroku \
   live-server \
