@@ -1,44 +1,46 @@
-[user]
-	email = jonah@jonahsnider.com
-	name = Jonah Snider
-	signingkey = 339704D783EF368FDCDFA473BCEA63377AC37FDE
-[gpg]
-	program = gpg
 [core]
 	autocrlf = false
-[commit]
-	gpgsign = true
-[credential]
-	credentialStore = gpg
-	helper =
-  helper = manager-core
-[credential "https://dev.azure.com"]
-	useHttpPath = true
 [pull]
 	rebase = true
 [rebase]
   autoSquash = true
 [init]
 	defaultBranch = main
-[credential "https://github.com"]
-	helper =
-	helper = !/usr/bin/env gh auth git-credential
+[pager]
+    diff = delta
+    log = delta
+    reflog = delta
+    show = delta
+[interactive]
+  diffFilter = delta --color-only
+[help]
+	autoCorrect = prompt
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
 
-[pager]
-    diff = delta
-    log = delta
-    reflog = delta
-    show = delta
+[user]
+	email = jonah@jonahsnider.com
+	name = Jonah Snider
+	signingkey = 339704D783EF368FDCDFA473BCEA63377AC37FDE
 
+[gpg]
+	program = gpg
+[commit]
+	gpgsign = true
+
+[credential]
+	credentialStore = gpg
+	helper =
+  helper = manager-core
+[credential "https://dev.azure.com"]
+	useHttpPath = true
+[credential "https://github.com"]
+	helper =
+	helper = !/usr/bin/env gh auth git-credential
+
+# Delta pager https://github.com/dandavison/delta
 [delta]
     syntax-theme = Dracula
-
-[interactive]
-    diffFilter = delta --color-only
-[help]
-	autoCorrect = prompt
