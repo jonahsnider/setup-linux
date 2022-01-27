@@ -13,11 +13,6 @@ run_keybase
 
 keybase login
 
-# E85CE1D319132409 - Old RSA-4096 key
-# BCEA63377AC37FDE - New ED25519 key
+# Update GPG keys with keybase pgp push-private
 
-keybase pgp export --query E85CE1D319132409 | gpg --import
-keybase pgp export --query BCEA63377AC37FDE | gpg --import
-
-keybase pgp export --query E85CE1D319132409 --secret | gpg --allow-secret-key-import --import
-keybase pgp export --query BCEA63377AC37FDE --secret | gpg --allow-secret-key-import --import
+keybase pgp pull-private --all --force
