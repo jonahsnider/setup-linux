@@ -15,12 +15,13 @@ npm config set prefix '~/.npm-global'
 
 # Install global packages
 yarn global add \
-  nodejs/repl \
   @openapitools/openapi-generator-cli \
-  how-cli \
   @squoosh/cli \
   heroku \
+  how-cli \
   live-server \
   micro \
+  nodejs/repl \
+  turbo \
   vdx \
   yo
