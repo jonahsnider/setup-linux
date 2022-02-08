@@ -40,6 +40,7 @@ alias yL "yarn lint --fix"
 alias yS "yarn style --write"
 alias yb "yarn build"
 alias yd "yarn dev"
+alias yw "yarn watch"
 
 # Docker
 alias d docker
@@ -107,6 +108,11 @@ alias r "yarn rome"
 alias rc "yarn rome check"
 alias rC "yarn rome check --apply"
 alias rt "yarn rome test"
+
+# Turbo
+# alias turbo "yarn turbo"
+alias t "turbo"
+alias tr "turbo run"
 
 # vfcli
 alias vf vfcli
