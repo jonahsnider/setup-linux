@@ -130,3 +130,8 @@ alias rb ruby
 
 # Node.js
 alias n node
+
+# Gradle wrapper
+alias gw ./gradlew
+alias gwb "./gradlew build"
+alias gwS "./gradlew spotlessApply"
