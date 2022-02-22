@@ -62,6 +62,9 @@ end
 if test -d ~/programming/zws
   alias cdpz "cd ~/programming/zws"
 end
+if test -d ~/programming/team581
+  alias cdpz "cd ~/programming/team581"
+end
 
 # Brew
 if type -q brew
