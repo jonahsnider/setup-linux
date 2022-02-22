@@ -34,6 +34,8 @@ alias y yarn
 alias ya "yarn add"
 alias yR "yarn remove"
 alias ys "yarn start"
+alias ysd "yarn start:dev"
+alias yp "yarn preview"
 alias yt "yarn test"
 alias yl "yarn lint"
 alias yL "yarn lint --fix"
