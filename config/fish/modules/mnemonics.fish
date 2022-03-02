@@ -9,12 +9,13 @@ alias gcm "git commit -m"
 alias gp "git pull"
 alias gP "git push"
 alias gr "git rebase"
-alias gs "git switch"
 alias gc "git checkout"
 alias grc "git rebase --continue"
 alias grm "git rebase master"
 alias gR "git reset"
 alias gb "git branch"
+alias gs "git switch"
+alias gsm git_switch_main
 
 # Watson
 if type -q watson
