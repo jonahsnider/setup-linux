@@ -122,6 +122,15 @@ alias tr "turbo run"
 
 # vfcli
 alias vf vfcli
+alias vfe "vfcli env"
+alias vfec "vfcli env connect"
+alias vfed "vfcli env disconnect"
+alias vfeR "vfcli env reset"
+alias vfel "vfcli env list"
+alias vft "vfcli track"
+alias vfta "vfcli track attach"
+alias vftl "vfcli track list"
+alias vfl "vfcli logs"
 
 if test -d ~/programming/voiceflow/database-cli
   alias dbcli ~/programming/voiceflow/database-cli/bin/run
