@@ -37,3 +37,9 @@ set -gx GOROOT /usr/local/go
 # Work directory
 set -gx GOPATH $HOME/programming/go
 #endregion
+
+#region Brew
+if test -f /opt/homebrew/bin/brew
+  eval (/opt/homebrew/bin/brew shellenv)
+end
+#endregion
