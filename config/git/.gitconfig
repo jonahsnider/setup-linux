@@ -24,10 +24,13 @@
 [user]
 	email = jonah@jonahsnider.com
 	name = Jonah Snider
-	signingkey = 339704D783EF368FDCDFA473BCEA63377AC37FDE
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBjTMQzuugrN4n+mQTrid9u7vH6TfhFaTa2stNS4C6EO
 
 [gpg]
 	program = gpg
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
 [commit]
 	gpgsign = true
 
