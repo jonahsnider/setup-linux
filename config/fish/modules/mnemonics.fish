@@ -60,7 +60,6 @@ alias dcS "docker compose stop"
 alias cdp "cd ~/programming"
 if test -d ~/programming/voiceflow
   alias cdpv "cd ~/programming/voiceflow"
-
 end
 if test -d ~/programming/zws
   alias cdpz "cd ~/programming/zws"
@@ -123,6 +122,7 @@ alias tr "turbo run"
 # vfcli
 alias vf vfcli
 alias vfe "vfcli env"
+alias vfer "vfcli env reconnect"
 alias vfec "vfcli env connect"
 alias vfed "vfcli env disconnect"
 alias vfeR "vfcli env reset"
