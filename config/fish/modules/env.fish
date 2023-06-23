@@ -14,6 +14,13 @@ set -gx NODE_ENV development
 set -gx DENO_INSTALL ~/.deno
 #endregion
 
+#region Python
+# pyenv
+if test (which pyenv)
+  pyenv init - | source
+end
+#endregion
+
 #region Secrets
 # GitHub token
 if test -f ~/.gh_token
