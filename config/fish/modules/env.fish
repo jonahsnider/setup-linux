@@ -14,6 +14,10 @@ set -gx NODE_ENV development
 set -gx DENO_INSTALL ~/.deno
 #endregion
 
+#region fnm
+set -gx FNM_COREPACK_ENABLED true
+#endregion
+
 #region Python
 # pyenv
 if test (which pyenv)
