@@ -107,12 +107,12 @@ alias cu curl
 # clear
 alias c "clear -x"
 
-# Rome
-alias rome "yarn rome"
-alias r "yarn rome"
-alias rc "yarn rome check"
-alias rC "yarn rome check --apply"
-alias rt "yarn rome test"
+# Biome
+alias biome "yarn biome"
+alias r "yarn biome"
+alias rc "yarn biome check"
+alias rC "yarn biome check --apply"
+alias rt "yarn biome test"
 
 # Turbo
 # alias turbo "yarn turbo"
