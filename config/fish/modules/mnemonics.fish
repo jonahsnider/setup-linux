@@ -45,6 +45,23 @@ alias yb "yarn build"
 alias yd "yarn dev"
 alias yw "yarn watch"
 
+# Bun
+alias b bun
+alias bi "bun install"
+alias ba "bun add"
+alias bR "bun remove"
+alias bs "bun start"
+alias bsd "bun start:dev"
+alias bp "bun preview"
+alias bt "bun test"
+alias bl "bun lint"
+alias bL "bun lint --fix"
+alias bS "bun style --write"
+alias bb "bun run build"
+alias bd "bun dev"
+alias bw "bun watch"
+alias bx "bunx"
+
 # Docker
 alias d docker
 alias db "docker build"
@@ -70,11 +87,11 @@ end
 
 # Brew
 if type -q brew
-  alias b brew
-  alias bu "brew update"
-  alias bU "brew upgrade"
-  alias bt "brew tap"
-  alias bi "brew install"
+  alias br brew
+  alias bru "brew update"
+  alias brU "brew upgrade"
+  alias brt "brew tap"
+  alias bri "brew install"
 end
 
 # apt
