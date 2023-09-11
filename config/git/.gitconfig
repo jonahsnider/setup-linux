@@ -47,3 +47,7 @@
 # Delta pager https://github.com/dandavison/delta
 [delta]
   syntax-theme = Dracula
+
+[diff "lockb"]
+    textconv = bun
+    binary = true
