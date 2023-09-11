@@ -14,6 +14,12 @@ set -gx NODE_ENV development
 set -gx DENO_INSTALL ~/.deno
 #endregion
 
+
+#region Bun
+set -gx BUN_INSTALL "$HOME/.bun"
+set -gx PATH $BUN_INSTALL/bin $PATH
+#endregion
+
 #region fnm
 set -gx FNM_COREPACK_ENABLED true
 #endregion
