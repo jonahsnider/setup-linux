@@ -14,3 +14,6 @@ alias python=(which python3)
 # Alias Squoosh CLI
 alias squoosh=squoosh-cli
 #endregion
+
+# 1Password plugins
+source /Users/jonah/.config/op/plugins.sh
