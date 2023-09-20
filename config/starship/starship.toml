@@ -2,64 +2,90 @@
 add_newline = false
 
 # https://starship.rs/config/#prompt
-# Time and directory are rearranged here
-format = """
-$username\
+# Time and directory have been rearranged
+format = """$username\
 $hostname\
-$shlvl\
-$kubernetes\
+$localip\
 $time\
+$shlvl\
+$singularity\
+$kubernetes\
 $vcsh\
+$fossil_branch\
 $git_branch\
 $git_commit\
 $git_state\
+$git_metrics\
 $git_status\
 $hg_branch\
+$pijul_channel\
 $docker_context\
 $package\
+$c\
 $cmake\
+$cobol\
+$daml\
 $dart\
 $deno\
 $dotnet\
 $elixir\
 $elm\
 $erlang\
+$fennel\
 $golang\
+$guix_shell\
+$haskell\
+$haxe\
 $helm\
 $java\
 $julia\
 $kotlin\
+$gradle\
+$lua\
 $nim\
+$bun\
 $nodejs\
 $ocaml\
+$opa\
 $perl\
 $php\
+$pulumi\
 $purescript\
 $python\
+$raku\
+$rlang\
 $red\
 $ruby\
 $rust\
 $scala\
+$solidity\
 $swift\
 $terraform\
+$vlang\
 $vagrant\
 $zig\
+$buf\
 $nix_shell\
 $conda\
+$meson\
+$spack\
 $memory_usage\
 $aws\
 $gcloud\
 $openstack\
+$azure\
 $env_var\
 $crystal\
 $custom\
+$sudo\
 $cmd_duration\
+$jobs\
 $battery\
 $line_break\
-$lua\
-$jobs\
 $directory\
 $status\
+$os\
+$container\
 $shell\
 $character"""
 
@@ -104,14 +130,11 @@ format = "on [$symbol$branch]($style)"
 
 # Show current git commit
 [git_commit]
-# disabled = false
 only_detached = false
-# prefix = "@"
-# suffix = " "
 format = "[@$hash]($style) "
 
 [git_status]
-deleted = "🗙"
+deleted = "󰆴"
 
 [username]
 format = "[$user]($style)@"
@@ -123,16 +146,8 @@ ssh_only = false
 style = "green"
 
 [java]
+symbol = " "
 style = "red"
 
-[nodejs]
-symbol = "⬢ "
-
 [aws]
-disabled = true
-
-[gcloud]
-disabled = true
-
-[docker_context]
 disabled = true
