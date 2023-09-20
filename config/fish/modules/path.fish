@@ -13,11 +13,6 @@ if test -d ~/.nix-profile/
 end
 #endregion
 
-#region Go
-# Add Go binaries to PATH
-fish_add_path -g $GOPATH/bin $GOROOT/bin
-#endregion
-
 #region Rust
 # Cargo binaries
 fish_add_path -g ~/.cargo/bin
@@ -38,4 +33,3 @@ fish_add_path -g ~/.npm-global/bin
 #region Python
 fish_add_path -g ~/.poetry/bin
 #endregion
-

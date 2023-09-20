@@ -48,13 +48,6 @@ end
 set -gx DOTNET_CLI_TELEMETRY_OPTOUT true
 #endregion
 
-#region Go
-# Go installation root directory
-set -gx GOROOT /usr/local/go
-# Work directory
-set -gx GOPATH $HOME/programming/go
-#endregion
-
 #region Brew
 if test -f /opt/homebrew/bin/brew
   eval (/opt/homebrew/bin/brew shellenv)
