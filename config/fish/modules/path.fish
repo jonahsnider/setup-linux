@@ -33,3 +33,7 @@ fish_add_path -g ~/.npm-global/bin
 #region Python
 fish_add_path -g ~/.poetry/bin
 #endregion
+
+#region Go
+fish_add_path -g (go env GOPATH)/bin
+#endregion Go
