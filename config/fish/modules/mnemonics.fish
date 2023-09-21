@@ -167,3 +167,8 @@ alias n node
 alias gw ./gradlew
 alias gwb "./gradlew build"
 alias gwS "./gradlew spotlessApply"
+
+# Go
+alias gor "go run"
+alias gom "go mod"
+alias gob "go build"
