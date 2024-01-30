@@ -14,6 +14,10 @@ set -gx NODE_ENV development
 set -gx DENO_INSTALL ~/.deno
 #endregion
 
+#region Proto
+set -gx PROTO_HOME "$HOME/.proto"
+set -gx PATH "$PROTO_HOME/shims:$PROTO_HOME/bin" $PATH
+#endregion
 
 #region Bun
 set -gx BUN_INSTALL "$HOME/.bun"
